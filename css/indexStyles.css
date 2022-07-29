@@ -1,3 +1,32 @@
 html {
-    background-color: blue;
+    background-color: #b5e6f5;
+}
+
+h1,
+h3,
+p {
+    margin-left: 1%;
+    font-family: 'Verdana', 'Arial'
+}
+
+.paragraphText {
+    margin-left: 1%;
+}
+
+#projectButtonsDiv {
+    width: 100%;
+}
+
+#personalProjectsDiv {
+    background-color: #f7a49e;
+    float: left;
+    width: 49.5%;
+    border-style: solid;
+}
+
+#schoolProjectsDiv {
+    background-color: #f7bc9e;
+    float: right;
+    width: 49.5%;
+    border-style: solid;
 }
