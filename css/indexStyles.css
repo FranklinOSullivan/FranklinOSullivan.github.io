@@ -9,24 +9,35 @@ p {
     font-family: 'Verdana', 'Arial'
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+tr,
+td {
+    border-style: solid;
+    font-family: 'Verdana', 'Arial';
+    width: 50%;
+}
+
+
+th {
+    border-style: solid;
+    font-family: 'Verdana', 'Arial';
+    width: 50%;
+    margin: 2px;
+    font-size: 22px;
+}
+
 .paragraphText {
     margin-left: 1%;
 }
 
-#projectButtonsDiv {
-    width: 100%;
-}
-
-#personalProjectsDiv {
+#personalProjects {
     background-color: #f7a49e;
-    float: left;
-    width: 49.5%;
-    border-style: solid;
 }
 
-#schoolProjectsDiv {
+#schoolProjects {
     background-color: #f7bc9e;
-    float: right;
-    width: 49.5%;
-    border-style: solid;
 }

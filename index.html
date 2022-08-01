@@ -14,38 +14,54 @@
     <h3>
         This is a place where I am displaying some of my projects.
     </h3>
-    <div id="projectButtonsDiv">
-        <div id="personalProjectsDiv">
-            <h3>
-                Personal Projects
-            </h3>
-            <p class="paragraphText">
-                These are some of the project I have been working on in my own time. They show some of my interests, as
-                well as some skills I wished to learn.<br /><br />
-                Press on any button to scroll to the relevant section.
-            </p>
-            <p>
-                <button id=" calculatorButton">HTML Calculator</button>
-                <button id="ledButton">Individually Addressable LEDs</button>
-            </p>
-        </div>
-        <div id="schoolProjectsDiv">
-            <h3>
-                School Projects
-            </h3>
-            <p class="paragraphText">
-                These are some of the projects I have been working on at university. Although I did not make most of the
-                code for these, I was tasked with implementing the logic and ensuring that the programs work smoothly
-                and without error.<br /><br />
-                Press on any button to scroll to the relevant section.
-            </p>
-            <p>
-                <button class="myButtons" id="blackjackButton">Commandline BlackJack Game Files</button>
-                <button class="myButtons" id="storeButton">Commandline Store FIles</button>
-            </p>
-        </div>
-    </div>
-
+    <table>
+        <tr>
+            <th id="personalProjects">Personal Projects</th>
+            <th id="schoolProjects">School/ University Projects</th>
+        </tr>
+        <tr>
+            <td id="personalProjects">
+                <h3>
+                    Personal Projects
+                </h3>
+                <p class="paragraphText">
+                    These are some of the project I have been working on in my own time. They show some of my
+                    interests, as
+                    well as some skills I wished to learn.<br /><br />
+                    Press on any button to scroll to the relevant section.
+                </p>
+                <p>
+                    <button id=" calculatorButton">HTML Calculator</button>
+                    <button id="ledButton">Individually Addressable LEDs</button>
+                </p>
+            </td>
+            <td id="schoolProjects">
+                <h3>
+                    School Projects
+                </h3>
+                <p class="paragraphText">
+                    These are some of the projects I have been working on at university. I was tasked with implementing
+                    the logic and ensuring that the programs work
+                    smoothly
+                    and without error.<br /><br />
+                    Press on any button to scroll to the relevant section.
+                </p>
+                <p>
+                    <button class="myButtons" id="blackjackButton">Commandline BlackJack Game Files</button>
+                    <button class="myButtons" id="storeButton">Commandline Store FIles</button>
+                </p>
+            </td>
+        </tr>
+    </table>
 </body>
 
 </html>
+
+<!-- Future projects:
+Alarm clock made with ATmega328p. Have it connected to 3 buttons, min, hour, alarm. Displayed on 4 7seg displays.
+Can be hung on a wall and dimmed at night.
+
+Connect a pump to the newt tank to allow them some flowing water. Can be connected to all kinds of electronics.
+
+A way to generate energy from rainfall.
+-->
