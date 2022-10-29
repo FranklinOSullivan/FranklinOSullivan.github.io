@@ -32,6 +32,11 @@ th {
     font-size: 22px;
 }
 
+#introSection {
+    display: flex;
+    align-items: center;
+}
+
 .paragraphText {
     margin-left: 1%;
 }
