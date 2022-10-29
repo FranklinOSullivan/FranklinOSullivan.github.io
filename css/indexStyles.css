@@ -1,7 +1,7 @@
 /* Css styles for the site */
 
 html {
-    background-color: #b5e6f5;
+    background-color: #ffffff;
 }
 
 h1,
@@ -32,8 +32,13 @@ th {
     font-size: 22px;
 }
 
+#mainContainer {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 #introSection {
-    display: flex;
+    display: block;
     align-items: center;
 }
 
@@ -45,6 +50,6 @@ th {
     background-color: #f7a49e;
 }
 
-#schoolProjects {
+#universityProjects {
     background-color: #f7bc9e;
 }

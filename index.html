@@ -8,61 +8,53 @@
 </head>
 
 <body>
-    <section id="introSection" class="pageSection">
-        <h1>
-            Franklin O'Sullivan
-        </h1>
-        <p id="introBio">
-            Computer systems engineer at the University of Auckland.
-        </p>
-    </section>
+    <div id="mainContainer">
+        <section id="introSection" class="pageSection">
+            <h1>
+                Franklin O'Sullivan
+            </h1>
+            <p id="introBio">
+                Computer systems engineer at the University of Auckland.
+            </p>
+        </section>
 
-    <h3>
-        This is a place where I am displaying some of my projects.
-    </h3>
-    <table>
-        <tr>
-            <th id="personalProjects">Personal Projects</th>
-            <th id="schoolProjects">School/ University Projects</th>
-        </tr>
-        <tr>
-            <td id="personalProjects">
-                <h3>
-                    Personal Projects
-                </h3>
-                <p class="paragraphText">
-                    These are some of the project I have been working on in my own time. They show some of my
-                    interests, as
-                    well as some skills I wished to learn.<br /><br />
-                    Press on any button to scroll to the relevant section.
-                </p>
-                <p>
-                    <button id=" calculatorButton">HTML Calculator</button>
-                    <button id="ledButton">Individually Addressable LEDs</button>
-                    <button id="srLatch">SRLatch</button>
-                    <video controls>Your browser does not support the &lt;video&gt; tag.
-                        <source src="resources/images/circuitImages/SRLatch.mp4" />
-                    </video>
-                </p>
-            </td>
-            <td id="schoolProjects">
-                <h3>
-                    School Projects
-                </h3>
-                <p class="paragraphText">
-                    These are some of the projects I have been working on at university. I was tasked with implementing
-                    the logic and ensuring that the programs work
-                    smoothly
-                    and without error.<br /><br />
-                    Press on any button to scroll to the relevant section.
-                </p>
-                <p>
-                    <button class="myButtons" id="blackjackButton">Commandline BlackJack Game Files</button>
-                    <button class="myButtons" id="storeButton">Commandline Store FIles</button>
-                </p>
-            </td>
-        </tr>
-    </table>
+        <section id="personalProjects" class="pageSection">
+            <h3>
+                Personal Projects
+            </h3>
+            <p class="paragraphText">
+                These are some of the project I have been working on in my own time. They show some of my
+                interests, as
+                well as some skills I wished to learn.<br /><br />
+                Press on any button to scroll to the relevant section.
+            </p>
+            <p>
+                <button id=" calculatorButton">HTML Calculator</button>
+                <button id="ledButton">Individually Addressable LEDs</button>
+                <button id="srLatch">SRLatch</button>
+                <video controls>Your browser does not support the &lt;video&gt; tag.
+                    <source src="resources/images/circuitImages/SRLatch.mp4" />
+                </video>
+            </p>
+        </section>
+        <section id="universityProjects" class="pageSection">
+            <h3>
+                School Projects
+            </h3>
+            <p class="paragraphText">
+                These are some of the projects I have been working on at university. I was tasked with
+                implementing
+                the logic and ensuring that the programs work
+                smoothly
+                and without error.<br /><br />
+                Press on any button to scroll to the relevant section.
+            </p>
+            <p>
+                <button class="myButtons" id="blackjackButton">Commandline BlackJack Game Files</button>
+                <button class="myButtons" id="storeButton">Commandline Store FIles</button>
+            </p>
+        </section>
+    </div>
 </body>
 
 </html>
