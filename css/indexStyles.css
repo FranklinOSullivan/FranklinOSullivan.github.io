@@ -1,35 +1,11 @@
 /* Css styles for the site */
 
+* {
+    font-family: 'Verdana', 'Arial';
+}
+
 html {
     background-color: #ffffff;
-}
-
-h1,
-h3,
-p {
-    margin-left: 1%;
-    font-family: 'Verdana', 'Arial'
-}
-
-table {
-    width: 100%;
-    border-collapse: collapse;
-}
-
-tr,
-td {
-    border-style: solid;
-    font-family: 'Verdana', 'Arial';
-    width: 50%;
-}
-
-
-th {
-    border-style: solid;
-    font-family: 'Verdana', 'Arial';
-    width: 50%;
-    margin: 2px;
-    font-size: 22px;
 }
 
 #mainContainer {
@@ -42,14 +18,26 @@ th {
     align-items: center;
 }
 
+#personalProjects {
+    display: block;
+    align-items: center;
+}
+
 .paragraphText {
     margin-left: 1%;
 }
 
-#personalProjects {
-    background-color: #f7a49e;
+.lineBreak {
+    background-color: #000000;
+    height: 2px;
+    display: flex;
+    margin-bottom: 2px;
 }
 
-#universityProjects {
-    background-color: #f7bc9e;
+.projectName {
+    display: flex;
+}
+
+.projectType {
+    color: #00A388;
 }
