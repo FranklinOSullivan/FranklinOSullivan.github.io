@@ -2,16 +2,25 @@
 
 * {
     font-family: 'Verdana', 'Arial';
-    color: #e6e6e6;
+    color: #252525;
 }
 
 html {
-    background-color: #131415;
+    background-color: #ffffff;
 }
 
 p,
 li {
-    color: #a9a9a9
+    color: #252525;
+}
+
+fieldset {
+    border: 0px;
+    border-top: 2px solid;
+}
+
+legend {
+    margin-left: -16px;
 }
 
 #userName {
@@ -28,6 +37,11 @@ li {
     align-items: center;
 }
 
+#socialList {
+    display: flex;
+    justify-content: space-between;
+}
+
 #personalProjects {
     display: block;
     align-items: center;
@@ -38,7 +52,7 @@ li {
 }
 
 .lineBreak {
-    background-color: #00A388;
+    background-color: #000000;
     height: 1px;
     display: flex;
     margin-bottom: 2px;
@@ -46,7 +60,6 @@ li {
 
 .projectCard {
     margin-top: 2px;
-    border-left: 1px solid;
 }
 
 .projectName {
