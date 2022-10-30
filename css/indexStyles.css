@@ -14,6 +14,14 @@ li {
     color: #252525;
 }
 
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #006aff;
+}
+
 fieldset {
     border: 0px;
     border-top: 2px solid;
@@ -39,7 +47,6 @@ legend {
 }
 
 #socialList {
-    display: flex;
     justify-content: space-between;
 }
 
