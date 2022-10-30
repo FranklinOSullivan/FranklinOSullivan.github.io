@@ -44,6 +44,11 @@ li {
     margin-bottom: 2px;
 }
 
+.projectCard {
+    margin-top: 2px;
+    border-left: 1px solid;
+}
+
 .projectName {
     display: flex;
 }
