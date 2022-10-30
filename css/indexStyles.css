@@ -20,6 +20,7 @@ fieldset {
 }
 
 legend {
+    display: absolute;
     margin-left: -16px;
 }
 
@@ -47,8 +48,8 @@ legend {
     align-items: center;
 }
 
-.paragraphText {
-    margin-left: 1%;
+#firstLetter {
+    color: #00A388;
 }
 
 .lineBreak {
