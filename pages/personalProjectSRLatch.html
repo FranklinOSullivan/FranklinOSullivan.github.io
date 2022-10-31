@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <link rel="stylesheet" href="../css/indexStyles.css">
+
+</head>
+
+<body>
+    <div id="mainContainer">
+        <section id="introSection" class="pageSection">
+            <h1 id="userName">
+                SR-Latch
+            </h1>
+            <p class="projectType">
+                Hardware
+            </p>
+            <a href="../index.html">Go back</a>
+        </section>
+        <section id="SRLatchSection" class="pageSection">
+            <img src="../resources/images/circuitImages/SRLatchFinal.jpg" alt="Final soldered circuit with battery"
+                style="width:340px;height:255px;margin-top:15px;">
+            <p class="figureDefinition">Figure 1: Final result</p>
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">P</span>urpose
+                    </strong>
+                </legend>
+                <p>
+                    An SR-Latch is an integral part of computer memory. Two transisitors and a few baising resisitors
+                    are able to store one bit of memory (a high or a low). I found that this was worth learning properly
+                    as it is the foundation of how computer registers and memory works.<br><br>
+                    I found that this project would also allow me to invest more time into learning about the hardware
+                    side of the computer to better understand its functions and how to best utilize it in the future.
+                </p>
+            </fieldset>
+
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">P</span>lanning and verifying
+                    </strong>
+                </legend>
+                <p>
+                    In order to plan and verify the design I was using for the SR-Latch. I first needed to create some
+                    simulation files to test what the outcome of the circuit would be.<br><br>
+                    I found that the best way to do this would be through the use of LTSpice, which is a spice based
+                    simulation software we use in university projects.
+                    Below is the file I used for my simulations.<br><br>
+                    This helped to verify that in theory, my design was correct and that it would likely work as
+                    expected. The next step was to assemble the circuit onto a breadboard, allowing for easy
+                    modification where nessecary.
+                    The results from this breadboarding can be seen below.<br><br>
+                    At this point I knew that the design I had been working with was correct and that I would be able to
+                    move forward to solder it together.
+                    The final soldered board can be seen below.<br>
+                </p>
+                <video controls>Your browser does not support the &lt;video&gt; tag.
+                    <source src="resources/images/circuitImages/SRLatch.mp4" />
+                </video>
+            </fieldset>
+        </section>
+    </div>
+</body>
+
+</html>
