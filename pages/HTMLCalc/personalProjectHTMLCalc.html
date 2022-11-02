@@ -48,13 +48,57 @@
                 Number 1:<input id="numb1" type="number"><br>
                 Number 2: <input id="numb2" type="number">
                 <br>
-                <button type="button" onclick="addValues()">Addition</button>
-                <button type="button" onclick="subtractValues()">Subtraction</button>
-                <button type="button" onclick="multiplyValues()">Multiplication</button>
-                <button type="button" onclick="divideValues()">Division</button>
+                <button type="button" onclick="simpleAddValues()">Addition</button>
+                <button type="button" onclick="simpleSubtractValues()">Subtraction</button>
+                <button type="button" onclick="simpleMultiplyValues()">Multiplication</button>
+                <button type="button" onclick="simpleDivideValues()">Division</button>
                 <br>
                 Your Result: <p id="result"></p>
                 <div class="lineBreak"></div>
+                <p>
+                    To continue this idea, I found it might be useful to utilize a table to arrange the numbers and
+                    modifiers into a more recogniseable calculator shape. This meant that there would more buttons and
+                    no more input boxes, leading to more Javascript.
+                </p>
+                <div class="lineBreak"></div>
+                <table style="width:25%;" border="1 solid">
+                    <tr>
+                    <tr>
+                        <td colspan="3">
+                            <p id="wNumber" class="myInput">
+                        </td>
+                        <td><button type="button" onclick="myCl()" class="myButtonAct"> C </button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><button type="button" onclick="myDisp(1)" class="myButton"> 1 </button> &nbsp;
+                        </td>
+                        <td><button type="button" onclick="myDisp(2)" class="myButton"> 2 </button> </td>
+                        <td><button type="button" onclick="myDisp(3)" class="myButton"> 3 </button> </td>
+                        <td><button type="button" onclick="myAction('plus')" class="myButtonAct"> + </button> </td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><button type="button" onclick="myDisp(4)" class="myButton"> 4 </button> </td>
+                        <td><button type="button" onclick="myDisp(5)" class="myButton"> 5 </button> </td>
+                        <td><button type="button" onclick="myDisp(6)" class="myButton"> 6 </button> </td>
+                        <td><button type="button" onclick="myAction('subtract')" class="myButtonAct"> - </button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="1"><button type="button" onclick="myDisp(7)" class="myButton"> 7 </button></td>
+                        <td><button type="button" onclick="myDisp(8)" class="myButton"> 8 </button> </td>
+                        <td><button type="button" onclick="myDisp(9)" class="myButton"> 9 </button> </td>
+                        <td><button type="button" onclick="myAction('multiply')" class="myButtonAct"> x </button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><button type="button" onclick="myDisp(0)" class="myButton"> 0 </button></td>
+                        <td><button type="button" onclick="myAction('sqrt')" class="myButtonAct"> sqrt </button></td>
+                        <p id="demo"></p>
+                        <td><button type="button" onclick="myAction('divide')" class="myButtonAct"> / </button></td>
+                    </tr>
+                    <tr>
+                        <td colspan="3"></td>
+                        <td><button type="button" onclick="myAction('equal')" class="myButtonAct"> = </button></td>
+                    </tr>
+                </table>
             </fieldset>
         </section>
     </div>
@@ -65,7 +109,7 @@
         var result = 0;
         document.getElementById("result").innerHTML = result;
         // Function to add the values
-        function addValues() {
+        function simpleAddValues() {
             // Get the value of the input field with id="numb1" 
             num1 = Number(document.getElementById("numb1").value);
 
@@ -77,7 +121,7 @@
             document.getElementById("result").innerHTML = result;
         }
 
-        function subtractValues() {
+        function simpleSubtractValues() {
             // Get the value of the input field with id="numb1" 
             num1 = Number(document.getElementById("numb1").value);
 
@@ -89,7 +133,7 @@
             document.getElementById("result").innerHTML = result;
         }
 
-        function multiplyValues() {
+        function simpleMultiplyValues() {
             // Get the value of the input field with id="numb1" 
             num1 = Number(document.getElementById("numb1").value);
 
@@ -101,7 +145,7 @@
             document.getElementById("result").innerHTML = result;
         }
 
-        function divideValues() {
+        function simpleDivideValues() {
             // Get the value of the input field with id="numb1" 
             num1 = Number(document.getElementById("numb1").value);
 
