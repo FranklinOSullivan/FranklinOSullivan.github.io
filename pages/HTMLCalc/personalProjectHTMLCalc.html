@@ -54,6 +54,7 @@
                 <button type="button" onclick="divideValues()">Division</button>
                 <br>
                 Your Result: <p id="result"></p>
+                <div class="lineBreak"></div>
             </fieldset>
         </section>
     </div>
@@ -62,6 +63,7 @@
         var num1 = 0;
         var num2 = 0;
         var result = 0;
+        document.getElementById("result").innerHTML = result;
         // Function to add the values
         function addValues() {
             // Get the value of the input field with id="numb1" 
