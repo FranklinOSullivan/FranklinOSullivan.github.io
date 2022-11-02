@@ -98,8 +98,42 @@
                         <td colspan="3"></td>
                         <td><button type="button" onclick="myAction('equal')" class="myButtonAct"> = </button></td>
                     </tr>
-                </table>
+                </table><br>
+                <div class="lineBreak"></div>
+                <p>
+                    This execution of the calculator allows for much more familiar use and is very intuitive to use.
+                    Although some more CSS could easily be added to improve the look of the calucltor, I found that this
+                    would not be nessecary and could be skipped.
+                </p>
             </fieldset>
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">W</span>hat did I learn?
+                    </strong>
+                </legend>
+                <p>
+                    Throughout this project, I learned how easy and powerful Javascript is to use. I also got a chance
+                    to do some simple math and work with tables. This helped me to understand positioning better and
+                    helped solidify my understanding of how useful a table can be in HTML as well as how versitile they
+                    are.
+                </p>
+            </fieldset>
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">F</span>uture inspiration
+                    </strong>
+                </legend>
+                <p>
+                    Although I doubt that I will ever need to recreate this project, I think that it can be a very
+                    useful inspiration for far more specific calculators. This project could easily be used to help
+                    solve problems that come up often in my classes at uni. (Maybe something like finding the resistor
+                    values to set a certain amount of gain for an OPAMP). This would be very simple to implement and
+                    would likely help me quite often as it will save a great amount of time.
+                </p>
+            </fieldset>
+            <div class="lineBreak"></div>
         </section>
     </div>
     <script>
@@ -161,12 +195,13 @@
         var currentNum = '';
         var savedNum;
         var currentAction = '';
+        document.getElementById("numberResult").innerHTML = 0;
         // Function to clear the calculator
         function clearInput() {
             currentNum = 0;
             savedNum = 0;
             currentAction = '';
-            document.getElementById("numberResult").innerHTML = '';
+            document.getElementById("numberResult").innerHTML = 0;
         }
         // Function to set the values in use
         function setVal(n) {
