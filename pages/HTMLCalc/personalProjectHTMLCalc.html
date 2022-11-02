@@ -48,14 +48,69 @@
                 Number 1:<input id="numb1" type="number"><br>
                 Number 2: <input id="numb2" type="number">
                 <br>
-                <button type="button" onclick="mySum()">sum</button>
-                <button type="button" onclick="myMultiply()">Multiply</button>
-                <button type="button" onclick="mydivision()">division</button>
-                <button type="button" onclick="mysubtraction()">subtract</button><br>
+                <button type="button" onclick="addValues()">Addition</button>
+                <button type="button" onclick="subtractValues()">Subtraction</button>
+                <button type="button" onclick="multiplyValues()">Multiplication</button>
+                <button type="button" onclick="divideValues()">Division</button>
+                <br>
                 Your Result: <p id="result"></p>
             </fieldset>
         </section>
     </div>
+    <script>
+        // Predefine the values being used
+        var num1 = 0;
+        var num2 = 0;
+        var result = 0;
+        // Function to add the values
+        function addValues() {
+            // Get the value of the input field with id="numb1" 
+            num1 = Number(document.getElementById("numb1").value);
+
+            // Get the value of input field with id="numb2" 
+            num2 = Number(document.getElementById("numb2").value);
+
+            result = num1 + num2;
+            // Set the result
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function subtractValues() {
+            // Get the value of the input field with id="numb1" 
+            num1 = Number(document.getElementById("numb1").value);
+
+            // Get the value of input field with id="numb2" 
+            num2 = Number(document.getElementById("numb2").value);
+
+            result = num1 - num2;
+            // Set the result
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function multiplyValues() {
+            // Get the value of the input field with id="numb1" 
+            num1 = Number(document.getElementById("numb1").value);
+
+            // Get the value of input field with id="numb2" 
+            num2 = Number(document.getElementById("numb2").value);
+
+            result = num1 * num2;
+            // Set the result
+            document.getElementById("result").innerHTML = result;
+        }
+
+        function divideValues() {
+            // Get the value of the input field with id="numb1" 
+            num1 = Number(document.getElementById("numb1").value);
+
+            // Get the value of input field with id="numb2" 
+            num2 = Number(document.getElementById("numb2").value);
+
+            result = num1 / num2;
+            // Set the result
+            document.getElementById("result").innerHTML = result;
+        }
+    </script>
 </body>
 
 </html>
