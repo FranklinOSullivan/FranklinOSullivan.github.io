@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <link rel="stylesheet" href="../../css/indexStyles.css">
+
+</head>
+
+<body>
+    <div id="mainContainer">
+        <a href="../../index.html">Go back</a>
+        <section id="introSection" class="pageSection">
+            <h1 id="userName">
+                Smart energy monitor
+            </h1>
+            <p class="projectType">
+                Firmware, Hardware, Software
+            </p>
+        </section>
+        <img src="../otherProjects/images/stmDiceHardware.jpg" alt="STM32F411-RE board connected to 6 LEDs"
+            style="width:340px;margin-top:15px;">
+        <p class="figureDefinition">Figure 1: Final assembly</p>
+        <section id="SRLatchSection" class="pageSection">
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">P</span>urpose
+                    </strong>
+                </legend>
+                <p>
+                    This project was led by my Electeng/Compsys 209 course at the University of Auckland. In teams of 4,
+                    we were tasked with reading the voltage across and current through a variable load that we were
+                    supplied.<br><br>
+                    We were able to read the voltage across the load by simply devising a voltage divider in which we
+                    would get a consistent ratio of the voltage across the load but would be able to work with a max
+                    voltage of 5V, rather than a max of 20V.<br><br>
+                    We were able to read the current through the load by using a shunt resistor. Due to OHM's law, we
+                    knew that we could find the current through a resistor by simply taking the voltage across the
+                    resistor and dividing this value by the resistance.<br>
+                    We selected a resistor value small enough that we would not change the value of the readings
+                    significantly, while also being large enough to supply us with a signal to noise ratio, SNR, that
+                    would allow for accurate calculations. <br><br>
+                    With both of these readings, we simply had to put them through an amplification stage, allowing for
+                    a maximum value of 5V and a minimum of 0V, with a 2.5V offset. This was to ensure that we could read
+                    the entire waveform with the microcontroller and not overload the pins.<br><br>
+                    After amplification, it was important to filter the readings. This was achieved with second order
+                    low pass Sallenkey filters, allowing for a 40dB drop per decade.<br><br>
+                    For our design we also opted to use two zero crossing triggers, though we found that in case of
+                    noise we would use Schmitt triggers, allowing for a small reigion of histeresis and preventing false
+                    triggers.<br><br>
+                    Once all of these readings had been taken by the microcontroller, we simply had to find what the
+                    actual values of our readings would be and display these to our output pereferials. This included
+                    writing to UART and a common cathod 4 bit 7 segment display.
+                </p>
+            </fieldset>
+
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">W</span>hat did I learn?
+                    </strong>
+                </legend>
+                <p>
+
+                </p>
+            </fieldset>
+
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">F</span>uture inspiration
+                    </strong>
+                </legend>
+                <p>
+
+                </p>
+            </fieldset>
+            <div class="lineBreak"></div>
+        </section>
+    </div>
+</body>
+
+</html>
