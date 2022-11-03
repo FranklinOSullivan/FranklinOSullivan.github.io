@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <link rel="stylesheet" href="../../css/indexStyles.css">
+
+</head>
+
+<body>
+    <div id="mainContainer">
+        <a href="../../index.html">Go back</a>
+        <section id="introSection" class="pageSection">
+            <h1 id="userName">
+                Dice emulator using STM32 prototype board
+            </h1>
+            <p class="projectType">
+                Firmware
+            </p>
+        </section>
+        <img src="../otherProjects/images/stmDiceHardware.jpg" alt="STM32F411-RE board connected to 6 LEDs"
+            style="width:340px;margin-top:15px;">
+        <p class="figureDefinition">Figure 1: Final assembly</p>
+        <section id="SRLatchSection" class="pageSection">
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">P</span>urpose
+                    </strong>
+                </legend>
+                <p>
+                    Moving into a field of firmware, the STM32 is a very powerful board that is used by many hobbyists.
+                    It also has an intuitive and easy to use IDE which makes this simpler.<br><br>
+                    I made this project to be able to learn how this IDE works and what the best way to go about using
+                    an STM microcontroller is. I was able to develop a program that would act as a dice and illuminate
+                    the relevent LED for each number rolled.<br><br>
+                    I achieved this through the use of one of the onboard timer counters (T/C). I simply set the T/C to
+                    increment with every clock cycle of the system clock and count from 0 to a max value of 5. This
+                    allowed for 6 different possible values of the T/C at any given time.<br><br>
+                    With the random values ready, I simply had to read the current value of the T/C everytime the user
+                    pressed the onboard button and write this output to the LEDs depending on the values.
+                </p>
+            </fieldset>
+
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">W</span>hat did I learn?
+                    </strong>
+                </legend>
+                <p>
+                    The first thing I learned very quickly was how important it is to read a datasheet fully before
+                    purchasing a piece of hardware. This came to my attention as I was trying to implement RNG is my
+                    code.<br><br>
+                    Some STM32 boards come with an RNG register. This is a 32 bit register that is simply filled with
+                    electrical noise, allowing for easy access to random numbers.<br>
+                    The board that I got did not have one of these registers.<br><br>
+                    Aside from that, I mostly just learned how the IDE of the STM32 works and became more comfortable
+                    working with them and microcontrollers in general.
+                </p>
+            </fieldset>
+
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">F</span>uture inspiration
+                    </strong>
+                </legend>
+                <p>
+                    A future inspiration that I gained from this project was simply that I wanted to do more work with
+                    the STM32 controllers in the future and ideally do a more complex project that will allow me to push
+                    the STM32 to it's limits.
+                </p>
+            </fieldset>
+            <div class="lineBreak"></div>
+        </section>
+    </div>
+</body>
+
+</html>
