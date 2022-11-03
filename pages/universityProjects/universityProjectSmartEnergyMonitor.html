@@ -18,9 +18,28 @@
                 Firmware, Hardware, Software
             </p>
         </section>
-        <img src="../otherProjects/images/stmDiceHardware.jpg" alt="STM32F411-RE board connected to 6 LEDs"
-            style="width:340px;margin-top:15px;">
-        <p class="figureDefinition">Figure 1: Final assembly</p>
+        <table>
+            <tr>
+                <td>
+                    <img src="../universityProjects/images/semLTSpice.JPG" alt="Smart energy monitor simulation files"
+                        style="width:340px;margin-top:15px;">
+                    <p class="figureDefinition">Figure 1: LTSpice simulation file of the project</p>
+                </td>
+                <td>
+                    <img src="../universityProjects/images/semPCBDesign.JPG" alt="Smart energy monitor PCB Design"
+                        style="width:340px;margin-top:15px;">
+                    <p class="figureDefinition">Figure 2: Altium PCB design for the project</p>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <img src="../universityProjects/images/semFinal.jpg" alt="Final working project"
+                        style="width:340px;margin-top:15px;">
+                    <p class="figureDefinition">Figure 3: Final working project</p>
+                </td>
+            </tr>
+        </table>
+
         <section id="SRLatchSection" class="pageSection">
             <fieldset class="projectCard">
                 <legend>
@@ -62,7 +81,32 @@
                     </strong>
                 </legend>
                 <p>
-
+                    Throughout this project I learned a lot of valuable information about electronics, firmware and
+                    software, as well as, about how to work with a team.<br><br>
+                    In terms of electronics. I learned great quantities about amplification with OPAMPs. This inclues
+                    knowing when the thevenins equlivalent of a circuit should be considered within the amplification
+                    stage, such as with our voltage reading. I also learned the value of implementation of first order
+                    filters in an accuracy dependant application such as an energy monitor. For our project we found it
+                    would be more valuable to use second order filters, so I took it upon myself to learn how they work
+                    and implement them into our design.<br>
+                    We also learned a bit about PCB design using altium and the benefits of using surface mount
+                    components rather than through hole.<br><br>
+                    For the Firmware side of the project, we exclusively used the Atmega328p or Atmega328pb for surface
+                    mount. This meant that all of our code was produced using C. We had to learn how to use the data
+                    sheet for our microcontroller and where to find valuable register information. We then had to know
+                    how to set registers through bit shifting values. On top of all this, we had a big focus on using
+                    interrupts and interupt service routines, ISRs. We used these ISRs to: take readings, update the
+                    display and perform math, all at set intervals.<br><br>
+                    Sadly I was not able to take a big part in the software section of the project, designing the python
+                    app. This was due to the fact that I was in charge of the firmware development and
+                    verification.<br><br>
+                    There was a lot to learn when it came to working with a team.<br>
+                    Although I have done a lot of teamwork in the past, it has never lasted for an entire semester or
+                    been a part of a project of this size. I learned the value of performing weekly team meetings to see
+                    progress of other team members. I also learned how sometimes people will not be as accountable as
+                    you may hope they will be and how to deal with situations like this, reaching the best possible
+                    outcomes for everyone involved. But most importantly I learned how to remain friends with the people
+                    in my team no matter what happens and to continue working together through adversity.
                 </p>
             </fieldset>
 
@@ -73,7 +117,10 @@
                     </strong>
                 </legend>
                 <p>
-
+                    Although not much of the project inspired me to improve upon it or reach further, I did find
+                    inspiration in the work that we did and the things we learned. In the future I would love the
+                    opportunity to do big group projects like this again, as well as, working with the electronics and
+                    firmware skills I gained from the project in my own hobbies or jobs in future.
                 </p>
             </fieldset>
             <div class="lineBreak"></div>
