@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <link rel="stylesheet" href="../../css/indexStyles.css">
+
+</head>
+
+<body>
+    <div id="mainContainer">
+        <a href="../../index.html">Go back</a>
+        <section id="introSection" class="pageSection">
+            <h1 id="userName">
+                Individually addressable LED strip using infared input
+            </h1>
+            <p class="projectType">
+                Firmware
+            </p>
+        </section>
+        <img src="../otherProjects/images/ialBlue.jpg" alt="Alternating on and off LEDs with colour gradient"
+            style="width:340px;margin-top:15px;">
+        <img src="../otherProjects/images/ialRed.jpg" alt="Alternating on and off LEDs with colour gradient"
+            style="width:340px;margin-top:15px;">
+        <p class="figureDefinition">Figure 1: Alternating on and off LEDs with blue gradient</p>
+        <p class="figureDefinition">Figure 2: Alternating on and off LEDs with red gradient</p>
+        <img src="../otherProjects/images/ialYellow.jpg" alt="Alternating on and off LEDs with colour gradient"
+            style="width:340px;margin-top:15px;">
+        <img src="../otherProjects/images/ialSensor.jpg" alt="Connected arduino with I/O"
+            style="width:340px;margin-top:15px;">
+        <p class="figureDefinition">Figure 3: Emulating fairy lights</p>
+        <p class="figureDefinition">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Figure
+            4:
+            Connected arduino with I/O</p>
+        <section id="SRLatchSection" class="pageSection">
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">P</span>urpose
+                    </strong>
+                </legend>
+                <p>
+                    During the first lockdown in 2020, I wanted a project that I could work on endlessly, due to import
+                    delays and the difficulty of sourcing components. I found that a strip of individually addressable
+                    LEDs would be very entertaining and fun to work with as it was something I could set up in my room
+                    and view/work on, daily. I also found that using an infared remote as an input was very easy to do
+                    and allowed me to select multiple modes without the need of uploading new code each time.
+                </p>
+            </fieldset>
+
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">W</span>hat did I learn?
+                    </strong>
+                </legend>
+                <p>
+                    This project was my first real introduction to the world or firmware development, before I even knew
+                    what git was. Throughout this project I learned about how the arduino IDE works and how it is able
+                    to connect to external inputs and outputs. This included writing to pins and doing so as part of a
+                    loop. I discovered how to use inputs, like an infared remote. Sadly I did not know about interrupts
+                    at the time and was not able to utilize them to the fullest of their ability, though I was able to
+                    devise a method to break out of loops when given an input.
+                </p>
+            </fieldset>
+
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">F</span>uture inspiration
+                    </strong>
+                </legend>
+                <p>
+                    This project is quite old now and upon reviewing it, it has inspired me to remake the project.
+                    Without the use of an arduino board but rather with an Atmega328p and a nicely assembled circuit. I
+                    will be able to use interrupts for the infared remote, simplifying the circuit greatly. I will also
+                    be able to learn how to properly write to the LEDs as instead of using an arduino library I will be
+                    able to use their "single NZR communication mode".
+                </p>
+            </fieldset>
+            <div class="lineBreak"></div>
+        </section>
+    </div>
+</body>
+
+</html>
