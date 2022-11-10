@@ -1,8 +1,9 @@
 /* Css styles for the site */
 
 * {
-    font-family: 'Verdana', 'Arial';
+    font-family: 'Trebuchet MS', 'Arial', 'Roboto';
     color: #252525;
+
 }
 
 html {
@@ -12,13 +13,19 @@ html {
 p,
 li {
     color: #252525;
+    font-size: 16px;
 }
 
 a {
     text-decoration: none;
 }
 
-u:hover {
+strong {
+    font-size: 20px;
+}
+
+u:hover,
+.underLine:hover {
     color: #006aff;
 }
 
@@ -49,6 +56,7 @@ legend {
 #socialList {
     display: flex;
     justify-content: space-evenly;
+    margin-top: -20px;
 }
 
 #personalProjects {
@@ -57,6 +65,11 @@ legend {
 }
 
 #firstLetter {
+    color: #00A388;
+    font-size: 20px;
+}
+
+#dateItem {
     color: #00A388;
 }
 
@@ -76,9 +89,17 @@ legend {
     text-align: center;
 }
 
+.skillType {
+    font-size: 18px;
+}
+
 .socialLinkSeperator {
     font-size: 30px;
     margin-top: -1px;
+}
+
+.extraInfo {
+    font-size: 15px;
 }
 
 .projectName {
