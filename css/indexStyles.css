@@ -18,7 +18,7 @@ a {
     text-decoration: none;
 }
 
-a:hover {
+u:hover {
     color: #006aff;
 }
 
@@ -47,7 +47,8 @@ legend {
 }
 
 #socialList {
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 #personalProjects {
@@ -68,6 +69,16 @@ legend {
 
 .projectCard {
     margin-top: 2px;
+}
+
+.socialLink {
+    font-size: 14px;
+    text-align: center;
+}
+
+.socialLinkSeperator {
+    font-size: 30px;
+    margin-top: -1px;
 }
 
 .projectName {
