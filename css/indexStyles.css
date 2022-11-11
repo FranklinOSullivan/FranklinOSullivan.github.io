@@ -41,10 +41,11 @@ legend {
 
 #userName {
     font-size: 36px;
+    text-align: center;
 }
 
 #mainContainer {
-    max-width: 816px;
+    max-width: 800px;
     margin: 0 auto;
 }
 
