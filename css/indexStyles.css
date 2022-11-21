@@ -111,6 +111,11 @@ legend {
     color: #00A388;
 }
 
+.projectTypePage {
+    color: #00A388;
+    text-align: center;
+}
+
 .figureDefinition {
     margin-top: 0px;
     font-size: 12px;
