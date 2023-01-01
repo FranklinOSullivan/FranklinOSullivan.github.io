@@ -23,6 +23,23 @@
             <fieldset class="projectCard">
                 <legend>
                     <strong class="projectName">
+                        <span id="firstLetter">E</span>xecution
+                    </strong>
+                </legend>
+                <p>Which resistor series would you like to use?</p>
+                <input type="radio" id="resistorSeriesPersonal" name="resistorSeries" value="Personal" checked>
+                <label for="resistorSeriesPersonal">Personal Series</label></br>
+                <input type="radio" id="resistorSeriesE12" name="resistorSeries" value="E12">
+                <label for="resistorSeriesE12">E12</label></br>
+                <p>Which resistance value were you trying to find?</p><input id="wantedResistance"
+                    type="number">Ohms<br><br>
+                <button type="button" onclick="findResistanceValues()">Find values</button><br><br>
+                Series result: <p id="seriesResult"></p>
+                Parallel result: <p id="parallelResult"></p>
+            </fieldset>
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
                         <span id="firstLetter">P</span>urpose
                     </strong>
                 </legend>
