@@ -13,6 +13,7 @@ function findResistanceValues() {
   }
   let seriesArray = findSeriesComb(wantedValue, wantedSeries);
   document.getElementById("seriesValuesDisplay").style.display = "block";
+  document.getElementById("parallelValuesDisplay").style.display = "block";
   document.getElementById("seriesValues").innerHTML = seriesArray;
   document.getElementById("seriesResult").innerHTML = seriesArray[0] + seriesArray[1];
 }
