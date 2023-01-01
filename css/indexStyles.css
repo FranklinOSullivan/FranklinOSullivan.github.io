@@ -44,6 +44,11 @@ legend {
     text-align: center;
 }
 
+#pageTitle {
+    font-size: 36px;
+    text-align: left;
+}
+
 #mainContainer {
     max-width: 800px;
     margin: 0 auto;
