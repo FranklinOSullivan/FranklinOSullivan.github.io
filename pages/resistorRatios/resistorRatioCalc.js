@@ -17,8 +17,10 @@ function findResistanceValues() {
   document.getElementById("parallelValuesDisplay").style.display = "block";
   document.getElementById("seriesValues").innerHTML = seriesArray;
   document.getElementById("seriesResult").innerHTML = seriesArray[0] + seriesArray[1];
+  document.getElementById("seriesAccuracy").innerHTML = findAccuracy(seriesArray[0] + seriesArray[1], wantedValue);
   document.getElementById("parallelValues").innerHTML = parallelArray;
   document.getElementById("parallelResult").innerHTML = (1 / ((1 / parallelArray[0]) + (1 / parallelArray[1])));
+  document.getElementById("parallelAccuracy").innerHTML = findAccuracy((1 / ((1 / parallelArray[0]) + (1 / parallelArray[1]))), wantedValue);
 }
 
 // Function to find the series combination
@@ -93,4 +95,9 @@ function compareValuesParallel(val1, val2, expectedVal) {
   else {
     return val2;
   }
+}
+
+// Function to find the accuracy of the result
+function findAccuracy(givenVal, expectedVal) {
+  return (givenVal / expectedVal) * 100;
 }
