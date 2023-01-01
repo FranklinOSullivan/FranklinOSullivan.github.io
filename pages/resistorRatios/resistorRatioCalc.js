@@ -11,9 +11,9 @@ function findResistanceValues() {
   if (document.getElementById("resistorSeriesPersonal").checked) {
     wantedSeries = personalSeries;
   }
-  let seriesArray0, seriesArray1, seriesValue = findSeriesComb(wantedValue, wantedSeries);
-  document.getElementById("seriesValue0").innerHTML = seriesArray0;
-  document.getElementById("seriesValue1").innerHTML = seriesArray1;
+  let seriesArray, seriesValue = findSeriesComb(wantedValue, wantedSeries);
+  console.log(seriesArray);
+  document.getElementById("seriesValue0").innerHTML = seriesArray;
   document.getElementById("seriesResult").innerHTML = seriesValue;
   alert("Values displayed")
 }
@@ -29,7 +29,7 @@ function findSeriesComb(inputValue, inputSeries) {
       currentBestComb = compareValuesSeries(currentBestComb, currentComb, inputValue);
     }
   }
-  return currentBestComb[0], currentBestComb[1], currentBestComb[0] + currentBestComb[1];
+  return currentBestComb, currentBestComb[0] + currentBestComb[1];
 }
 
 // Function to compare values
