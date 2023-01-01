@@ -7,4 +7,30 @@ function findResistanceValues() {
   // Find the value wanted by the user
   let wantedValue = Number(document.getElementById("wantedResistance").value);
   alert(wantedValue);
+  let wantedSeries = null;
+  // Find the series the user wants to use
+  if (document.getElementById("resistorSeriesPersonal").checked) {
+    wantedSeries = personalSeries;
+  }
+  findSeriesComb(wantedValue, wantedSeries);
+}
+
+// Function to find the series combination
+function findSeriesComb(inputValue, inputSeries) {
+  let currentBestComb = [0, 0];
+  let currentComb = [0, 0];
+  // Loop to find the combinations
+  for (const i of inputSeries) {
+    for (const j of inputSeries) {
+      currentComb = [i, j];
+      currentBestComb = compareValuesSeries(currentBestComb, currentComb, inputValue);
+    }
+  }
+}
+
+// Function to compare values
+function compareValuesSeries(val1, val2, expectedVal) {
+  // Get the values
+  let num1 = val1[0] + val1[1];
+  let num2 = val2[0] + val2[1];
 }
