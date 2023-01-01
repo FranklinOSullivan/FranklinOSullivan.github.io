@@ -1,5 +1,10 @@
+// Series of my personal resistors
 const personalSeries = [0, 10, 22, 47, 100, 150, 200, 220, 270, 330, 470,
-  510, 680, 1000, 2000, 2200, 3300, 4700, 5100, 6800, 10000]
+  510, 680, 1000, 2000, 2200, 3300, 4700, 5100, 6800, 10000];
+// Series of E12 resistors
+const e12Series = [0, 10, 12, 15, 18, 22, 27, 33, 39, 47, 56, 68, 82, 100,
+  120, 150, 180, 220, 270, 330, 390, 470, 560, 680, 820, 1000, 1200, 1500,
+  1800, 2200, 2700, 3300, 3900, 4700, 5600, 6800, 8200, 10000];
 
 
 // Function to find the resistance values, called from button input
@@ -10,6 +15,9 @@ function findResistanceValues() {
   // Find the series the user wants to use
   if (document.getElementById("resistorSeriesPersonal").checked) {
     wantedSeries = personalSeries;
+  }
+  else {
+    wantedSeries = e12Series;
   }
   let seriesArray = findSeriesComb(wantedValue, wantedSeries);
   let parallelArray = findParallelComb(wantedValue, wantedSeries);
