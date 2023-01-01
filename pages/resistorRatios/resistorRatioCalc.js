@@ -6,13 +6,16 @@ const personalSeries = [0, 10, 22, 47, 100, 150, 200, 220, 270, 330, 470,
 function findResistanceValues() {
   // Find the value wanted by the user
   let wantedValue = Number(document.getElementById("wantedResistance").value);
-  alert(wantedValue);
   let wantedSeries = null;
   // Find the series the user wants to use
   if (document.getElementById("resistorSeriesPersonal").checked) {
     wantedSeries = personalSeries;
   }
-  findSeriesComb(wantedValue, wantedSeries);
+  let seriesArray0, seriesArray1, seriesValue = findSeriesComb(wantedValue, wantedSeries);
+  document.getElementById("seriesValue0").innerHTML = seriesArray0;
+  document.getElementById("seriesValue1").innerHTML = seriesArray1;
+  document.getElementById("seriesResult").innerHTML = seriesValue;
+  alert("Values displayed")
 }
 
 // Function to find the series combination
@@ -26,6 +29,7 @@ function findSeriesComb(inputValue, inputSeries) {
       currentBestComb = compareValuesSeries(currentBestComb, currentComb, inputValue);
     }
   }
+  return currentBestComb[0], currentBestComb[1], currentBestComb[0] + currentBestComb[1];
 }
 
 // Function to compare values
@@ -33,4 +37,14 @@ function compareValuesSeries(val1, val2, expectedVal) {
   // Get the values
   let num1 = val1[0] + val1[1];
   let num2 = val2[0] + val2[1];
+  // Find the distances
+  let dist1 = Math.abs(expectedVal - num1);
+  let dist2 = Math.abs(expectedVal - num2);
+  // Compare distances
+  if (dist1 < dist2) {
+    return val1;
+  }
+  else {
+    return val2;
+  }
 }
