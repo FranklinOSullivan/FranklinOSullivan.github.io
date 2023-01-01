@@ -12,10 +12,9 @@ function findResistanceValues() {
     wantedSeries = personalSeries;
   }
   let seriesArray = findSeriesComb(wantedValue, wantedSeries);
-  console.log(seriesArray);
-  document.getElementById("seriesValue0").innerHTML = seriesArray;
+  document.getElementById("seriesValuesDisplay").style.display = "block";
+  document.getElementById("seriesValues").innerHTML = seriesArray;
   document.getElementById("seriesResult").innerHTML = seriesArray[0] + seriesArray[1];
-  alert("Values displayed")
 }
 
 // Function to find the series combination
