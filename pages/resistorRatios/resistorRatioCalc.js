@@ -71,7 +71,7 @@ function compareValuesSeries(val1, val2, expectedVal) {
   let dist1 = Math.abs(expectedVal - num1S);
   let dist2 = Math.abs(expectedVal - num2S);
   // Compare distances
-  if (dist1 < dist2) {
+  if (dist1 < dist2 || dist1 == dist2) {
     return val1;
   }
   else {
@@ -100,7 +100,7 @@ function compareValuesParallel(val1, val2, expectedVal) {
   let dist1 = Math.abs(expectedVal - num1P);
   let dist2 = Math.abs(expectedVal - num2P);
   // Compare distances
-  if (dist1 < dist2) {
+  if (dist1 < dist2 || dist1 == dist2) {
     return val1;
   }
   else {
@@ -110,7 +110,7 @@ function compareValuesParallel(val1, val2, expectedVal) {
 
 // Function to find the accuracy of the result
 function findAccuracy(givenVal, expectedVal) {
-  if (expectedVal == 0) {
+  if (expectedVal == 0 || givenVal == 0) {
     return 0;
   }
   if (expectedVal < givenVal) {
@@ -145,7 +145,12 @@ function findResistorRatio() {
   // Display the best combination to the user
   document.getElementById("ratioValuesDisplay").style.display = "block";
   document.getElementById("ratioValues").innerHTML = currentBestComb;
-  document.getElementById("ratioResult").innerHTML = (currentBestComb[0] / currentBestComb[1]).toFixed(5);
+  if (currentBestComb[1] == 0) {
+    document.getElementById("ratioResult").innerHTML = 0;
+  }
+  else {
+    document.getElementById("ratioResult").innerHTML = (currentBestComb[0] / currentBestComb[1]).toFixed(5);
+  }
   document.getElementById("ratioAccuracy").innerHTML = findAccuracy(currentBestComb[0] / currentBestComb[1], wantedRatio).toFixed(5);
 }
 
@@ -170,7 +175,7 @@ function compareValuesRatio(val1, val2, expectedVal) {
   let dist1 = Math.abs(expectedVal - num1R);
   let dist2 = Math.abs(expectedVal - num2R);
   // Return the smallest distance
-  if (dist1 < dist2) {
+  if (dist1 < dist2 || dist1 == dist2) {
     return val1;
   }
   else {
