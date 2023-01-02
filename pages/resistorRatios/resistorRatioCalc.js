@@ -113,6 +113,9 @@ function findAccuracy(givenVal, expectedVal) {
   if (expectedVal == 0) {
     return 0;
   }
+  if (expectedVal < givenVal) {
+    return (expectedVal / givenVal) * 100;
+  }
   else {
     return (givenVal / expectedVal) * 100;
   }
@@ -147,7 +150,7 @@ function findResistorRatio() {
 }
 
 // Function to compare the values of a ratio
-function conpareValuesRatio(val1, val2, expectedVal) {
+function compareValuesRatio(val1, val2, expectedVal) {
   let num1R = 0;
   let num2R = 0;
   // Find the values checking for zero division
@@ -168,9 +171,9 @@ function conpareValuesRatio(val1, val2, expectedVal) {
   let dist2 = Math.abs(expectedVal - num2R);
   // Return the smallest distance
   if (dist1 < dist2) {
-    return dist1;
+    return val1;
   }
   else {
-    return dist2;
+    return val2;
   }
 }
