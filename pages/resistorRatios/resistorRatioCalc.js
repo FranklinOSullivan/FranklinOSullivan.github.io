@@ -27,11 +27,11 @@ function findResistanceValues() {
   document.getElementById("seriesValuesDisplay").style.display = "block";
   document.getElementById("parallelValuesDisplay").style.display = "block";
   document.getElementById("seriesValues").innerHTML = seriesArray;
-  document.getElementById("seriesResult").innerHTML = seriesArray[0] + seriesArray[1];
-  document.getElementById("seriesAccuracy").innerHTML = findAccuracy(seriesArray[0] + seriesArray[1], wantedValue);
+  document.getElementById("seriesResult").innerHTML = (seriesArray[0] + seriesArray[1]).toFixed(5);
+  document.getElementById("seriesAccuracy").innerHTML = findAccuracy(seriesArray[0] + seriesArray[1], wantedValue).toFixed(5);
   document.getElementById("parallelValues").innerHTML = parallelArray;
-  document.getElementById("parallelResult").innerHTML = (1 / ((1 / parallelArray[0]) + (1 / parallelArray[1])));
-  document.getElementById("parallelAccuracy").innerHTML = findAccuracy((1 / ((1 / parallelArray[0]) + (1 / parallelArray[1]))), wantedValue);
+  document.getElementById("parallelResult").innerHTML = (1 / ((1 / parallelArray[0]) + (1 / parallelArray[1]))).toFixed(5);
+  document.getElementById("parallelAccuracy").innerHTML = findAccuracy((1 / ((1 / parallelArray[0]) + (1 / parallelArray[1]))), wantedValue).toFixed(5);
 }
 
 // Function to find the series combination
@@ -145,8 +145,8 @@ function findResistorRatio() {
   // Display the best combination to the user
   document.getElementById("ratioValuesDisplay").style.display = "block";
   document.getElementById("ratioValues").innerHTML = currentBestComb;
-  document.getElementById("ratioResult").innerHTML = currentBestComb[0] / currentBestComb[1];
-  document.getElementById("ratioAccuracy").innerHTML = findAccuracy(currentBestComb[0] / currentBestComb[1], wantedRatio);
+  document.getElementById("ratioResult").innerHTML = (currentBestComb[0] / currentBestComb[1]).toFixed(5);
+  document.getElementById("ratioAccuracy").innerHTML = findAccuracy(currentBestComb[0] / currentBestComb[1], wantedRatio).toFixed(5);
 }
 
 // Function to compare the values of a ratio
