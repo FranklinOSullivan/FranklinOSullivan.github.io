@@ -33,7 +33,7 @@
                             <input type="radio" id="resistorSeriesPersonalV" name="resistorSeriesV" value="Personal"
                                 checked>
                             <label for="resistorSeriesPersonalV">Personal Series</label></br>
-                            <input type="radio" id="resistorSeriesE12V" name="resistorSeriesV value=" E12">
+                            <input type="radio" id="resistorSeriesE12V" name="resistorSeriesV" value="E12">
                             <label for="resistorSeriesE12V">E12</label></br>
                             <p>Which resistance value were you trying to find?</p><input id="wantedResistance"
                                 type="number" style="width: 25%;">Ohms<br><br>
@@ -69,8 +69,8 @@
                             <input type="radio" id="resistorSeriesE12R" name="resistorSeriesR" value="E12">
                             <label for="resistorSeriesE12R">E12</label></br>
                             <p>Which resistance ratio were you trying to find? </p>
-                            <p>(R1/R2)</p>
-                            <input id="wantedRatio" type="number" step="any" min="0" style="width: 25%;" /><br><br>
+                            <input id="wantedRatio" type="number" step="any" min="0"
+                                style="width: 25%;" />(R1/R2)<br><br>
                             <button type="button" onclick="findResistorRatio()">Find Ratio</button><br><br>
                             <div id="ratioValuesDisplay" style="display: none;"><br>
                                 <p style="display: inline">Ratio values: </p>
