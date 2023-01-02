@@ -26,36 +26,67 @@
                         <span id="firstLetter">E</span>xecution
                     </strong>
                 </legend>
-                <p>Which resistor series would you like to use?</p>
-                <input type="radio" id="resistorSeriesPersonal" name="resistorSeries" value="Personal" checked>
-                <label for="resistorSeriesPersonal">Personal Series</label></br>
-                <input type="radio" id="resistorSeriesE12" name="resistorSeries" value="E12">
-                <label for="resistorSeriesE12">E12</label></br>
-                <p>Which resistance value were you trying to find?</p><input id="wantedResistance"
-                    type="number">Ohms<br><br>
-                <button type="button" onclick="findResistanceValues()">Find values</button><br><br>
-                <div id="seriesValuesDisplay" style="display: none;">
-                    <p style="display: inline">Series values: </p>
-                    <p id="seriesValues" style="display: inline"></p><br>
-                    <p style="display: inline">Resulting resistance: </p>
-                    <p id="seriesResult" style="display: inline"></p>
-                    <p style="display: inline">Ohms</p><br>
-                    <p style="display: inline">Accuracy: </p>
-                    <p id="seriesAccuracy" style="display: inline"></p>
-                    <p style="display: inline">%</p>
-                    <br>
-                </div>
-                <div id="parallelValuesDisplay" style="display: none;"><br>
-                    <p style="display: inline">Parallel values: </p>
-                    <p id="parallelValues" style="display: inline"></p><br>
-                    <p style="display: inline">Resulting resistance: </p>
-                    <p id="parallelResult" style="display: inline"></p>
-                    <p style="display: inline">Ohms</p><br>
-                    <p style="display: inline">Accuracy: </p>
-                    <p id="parallelAccuracy" style="display: inline"></p>
-                    <p style="display: inline">%</p>
-                    <br>
-                </div>
+                <table>
+                    <tr>
+                        <td VALIGN="TOP">
+                            <p>Which resistor series would you like to use?</p>
+                            <input type="radio" id="resistorSeriesPersonalV" name="resistorSeriesV" value="Personal"
+                                checked>
+                            <label for="resistorSeriesPersonalV">Personal Series</label></br>
+                            <input type="radio" id="resistorSeriesE12V" name="resistorSeriesV value=" E12">
+                            <label for="resistorSeriesE12V">E12</label></br>
+                            <p>Which resistance value were you trying to find?</p><input id="wantedResistance"
+                                type="number" style="width: 25%;">Ohms<br><br>
+                            <button type="button" onclick="findResistanceValues()">Find values</button><br><br>
+                            <div id="seriesValuesDisplay" style="display: none;">
+                                <p style="display: inline">Series values: </p>
+                                <p id="seriesValues" style="display: inline"></p><br>
+                                <p style="display: inline">Resulting resistance: </p>
+                                <p id="seriesResult" style="display: inline"></p>
+                                <p style="display: inline">Ohms</p><br>
+                                <p style="display: inline">Accuracy: </p>
+                                <p id="seriesAccuracy" style="display: inline"></p>
+                                <p style="display: inline">%</p>
+                                <br>
+                            </div>
+                            <div id="parallelValuesDisplay" style="display: none;"><br>
+                                <p style="display: inline">Parallel values: </p>
+                                <p id="parallelValues" style="display: inline"></p><br>
+                                <p style="display: inline">Resulting resistance: </p>
+                                <p id="parallelResult" style="display: inline"></p>
+                                <p style="display: inline">Ohms</p><br>
+                                <p style="display: inline">Accuracy: </p>
+                                <p id="parallelAccuracy" style="display: inline"></p>
+                                <p style="display: inline">%</p>
+                                <br>
+                            </div>
+                        </td>
+                        <td VALIGN="TOP">
+                            <p>Which resistor series would you like to use?</p>
+                            <input type="radio" id="resistorSeriesPersonalR" name="resistorSeriesR" value="Personal"
+                                checked>
+                            <label for="resistorSeriesPersonalR">Personal Series</label></br>
+                            <input type="radio" id="resistorSeriesE12R" name="resistorSeriesR" value="E12">
+                            <label for="resistorSeriesE12R">E12</label></br>
+                            <p>Which resistance ratio were you trying to find? </p>
+                            <p>(R1/R2)</p>
+                            <input id="wantedRatio" type="number" step="any" min="0" style="width: 25%;" /><br><br>
+                            <button type="button" onclick="findResistorRatio()">Find Ratio</button><br><br>
+                            <div id="ratioValuesDisplay" style="display: none;"><br>
+                                <p style="display: inline">Ratio values: </p>
+                                <p id="ratioValues" style="display: inline"></p><br>
+                                <p style="display: inline">Resulting resistance: </p>
+                                <p id="ratioResult" style="display: inline"></p>
+                                <p style="display: inline">Ohms</p><br>
+                                <p style="display: inline">Accuracy: </p>
+                                <p id="ratioAccuracy" style="display: inline"></p>
+                                <p style="display: inline">%</p>
+                                <br>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+
             </fieldset>
             <fieldset class="projectCard">
                 <legend>

@@ -16,7 +16,7 @@ function findResistanceValues() {
   let wantedValue = Number(document.getElementById("wantedResistance").value);
   let wantedSeries = null;
   // Find the series the user wants to use
-  if (document.getElementById("resistorSeriesPersonal").checked) {
+  if (document.getElementById("resistorSeriesPersonalV").checked) {
     wantedSeries = personalSeries;
   }
   else {
@@ -110,5 +110,67 @@ function compareValuesParallel(val1, val2, expectedVal) {
 
 // Function to find the accuracy of the result
 function findAccuracy(givenVal, expectedVal) {
-  return (givenVal / expectedVal) * 100;
+  if (expectedVal == 0) {
+    return 0;
+  }
+  else {
+    return (givenVal / expectedVal) * 100;
+  }
+}
+
+
+// Function to find the resistor ratio
+function findResistorRatio() {
+  // Find the value wanted by the user
+  let wantedRatio = Number(document.getElementById("wantedRatio").value);
+  // Find the series the user wants to use
+  if (document.getElementById("resistorSeriesPersonalR").checked) {
+    wantedSeries = personalSeries;
+  }
+  else {
+    wantedSeries = e12Series;
+  }
+  let currentBestComb = [0, 0];
+  let currentComb = [0, 0];
+  // Loop to find the combinations
+  for (const i of wantedSeries) {
+    for (const j of wantedSeries) {
+      currentComb = [i, j];
+      currentBestComb = compareValuesRatio(currentBestComb, currentComb, wantedRatio);
+    }
+  }
+  // Display the best combination to the user
+  document.getElementById("ratioValuesDisplay").style.display = "block";
+  document.getElementById("ratioValues").innerHTML = currentBestComb;
+  document.getElementById("ratioResult").innerHTML = currentBestComb[0] / currentBestComb[1];
+  document.getElementById("ratioAccuracy").innerHTML = findAccuracy(currentBestComb[0] / currentBestComb[1], wantedRatio);
+}
+
+// Function to compare the values of a ratio
+function conpareValuesRatio(val1, val2, expectedVal) {
+  let num1R = 0;
+  let num2R = 0;
+  // Find the values checking for zero division
+  if (val1[1] == 0) {
+    num1R = 0;
+  }
+  else {
+    num1R = val1[0] / val1[1];
+  }
+  if (val2[1] == 0) {
+    num2R = 0;
+  }
+  else {
+    num2R = val2[0] / val2[1];
+  }
+  // Find the smallest distance
+  let dist1 = Math.abs(expectedVal - num1R);
+  let dist2 = Math.abs(expectedVal - num2R);
+  // Return the smallest distance
+  if (dist1 < dist2) {
+    return dist1;
+  }
+  else {
+    return dist2;
+  }
 }
