@@ -36,7 +36,7 @@
                             <input type="radio" id="resistorSeriesE12V" name="resistorSeriesV" value="E12">
                             <label for="resistorSeriesE12V">E12</label></br>
                             <p>Which resistance value were you trying to find?</p><input id="wantedResistance"
-                                type="number" style="width: 25%;">Ohms<br><br>
+                                type="number" min="0" style="width: 25%;">Ohms<br><br>
                             <button type="button" onclick="findResistanceValues()">Find values</button><br><br>
                             <div id="seriesValuesDisplay" style="display: none;">
                                 <p style="display: inline">Series values: </p>
