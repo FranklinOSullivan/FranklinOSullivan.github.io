@@ -75,6 +75,11 @@ legend {
     font-size: 20px;
 }
 
+#firstLetterPageName {
+    color: #00A388;
+    font-size: 30px;
+}
+
 #dateItem {
     color: #00A388;
 }
@@ -124,4 +129,8 @@ legend {
 .figureDefinition {
     margin-top: 0px;
     font-size: 12px;
+}
+
+.pageName {
+    font-size: 30px;
 }
