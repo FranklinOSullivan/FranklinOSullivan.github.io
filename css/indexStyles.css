@@ -71,17 +71,17 @@ legend {
 }
 
 #firstLetter {
-    color: #00A388;
+    color: #0395DE;
     font-size: 20px;
 }
 
 #firstLetterPageName {
-    color: #00A388;
+    color: #0395DE;
     font-size: 30px;
 }
 
 #dateItem {
-    color: #00A388;
+    color: #0395DE;
 }
 
 .lineBreak {
@@ -118,11 +118,11 @@ legend {
 }
 
 .projectType {
-    color: #00A388;
+    color: #0395DE;
 }
 
 .projectTypePage {
-    color: #00A388;
+    color: #0395DE;
     text-align: center;
 }
 
