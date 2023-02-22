@@ -1,0 +1,7 @@
+Plan of all things I wish to add or improve
+
+Move to NextJs or NodeJs
+Use a database to hold all my information and dynamicly create new projects
+Change the page to be starting on an intro page and having a dynamic side bar that will take the user to view projects
+Change the aspect ratio and colour theme
+Change the way the images and text is displayed to a much nicer and visually appealing manner
