@@ -80,8 +80,23 @@ legend {
     font-size: 30px;
 }
 
+#profilePhoto {
+    height: 110px;
+    width: 110px;
+    top: 50%;
+    left: 50%;
+    translate: -33% 33%;
+    border-radius: 50%;
+}
+
 #dateItem {
     color: #0395DE;
+}
+
+#userName {
+    font-size: 40px;
+    text-align: top;
+    translate: -4% -15%;
 }
 
 .lineBreak {
