@@ -19,6 +19,9 @@
             </p>
         </section>
         <section id="plantWaterSensorPageSection" class="pageSection">
+            <img src="../plantWaterSensor/images/Monstera_adansonii_leaf.jpg" alt="Monstera Adansonii leaf"
+                style="height:200px;margin-top:15px;">
+            <p class="figureDefinition">Figure 1: Adanson's monstera leaf</p>
             <fieldset class="projectCard">
                 <legend>
                     <strong class="projectName">
@@ -26,48 +29,75 @@
                     </strong>
                 </legend>
                 <p>
-                    Life is precious. Plants can be espically so as they are able to generate food or other consumable
-                    products. All plants require a different level of care. This can be anything from full sunlight all
-                    days of the year as is experrienced by desert plants or it could be minimal sunlight with almost no
-                    heat allowed, as is often seen in indoor house plants. <br />
-                    <br />
-                    In my room. I have a few plants that I care for, mostly for look. My most precious of these is my
-                    Adanson's monstera (Monstera Adansonii). This plant comes from the rainforest reigions of Southern
-                    and Central America. This means that the plant often requires a great amount of care, as it now
-                    lives in a bedroom in New Zealand.
+                    Life is precious. Not only does Earth hold the only known instances of it, but it is also
+                    required to feed and care for human beings. Throughout the world, there are millions of different
+                    plant species, all with difference appearances, properties and needs.
                     <br />
                     <br />
-                    My Adanson's monstera enjoys being difficult. It likes to live in a spot which experiences bright,
+                    In my room, I have a few plants that I care for, though largely for looks and not for food or
+                    health. My most precious of these is my Adanson's monstera (Monstera Adansonii) which I rescued and
+                    have raised since it was only a single leaf. This plant originates from the river valleys of South
+                    and Central America. Meaning that it often requires a great amount of care, as it now
+                    lives in a dry bedroom in New Zealand.
+                </p>
+                <table>
+                    <tr>
+                        <td style="width:400px;">
+                            <img src="../plantWaterSensor/images/Monstera_adansonii_leaf.jpg"
+                                alt="Monstera Adansonii leaf" style="height:200px;margin-top:15px;">
+                            <p class="figureDefinition">Figure 1: Adanson's monstera leaf</p>
+                        </td>
+                        <td>
+                            <img src="../plantWaterSensor/images/monsteraNow.jpg" alt="Monstera Adansonii leaf"
+                                style="height:200px;margin-top:15px;">
+                            <p class="figureDefinition">Figure 2: My Adanson's monstera now</p>
+                        </td>
+                    </tr>
+                </table>
+                <p>
+                    The Adanson's monstera likes to live in a position in which it is able to experience bright,
                     indirect sunlight, such as a windowsill. It lives best in a temperature range of 18 - 27 Degrees
-                    Celcius, with an almost constant humidity level of 60%. This is exptremely difficult to maintain,
+                    Celcius, with an ideal humidity level of 60%. This is extremely difficult to maintain,
                     not only with temperatures in New Zealand bearly fitting the ideal ranges, but also because I have
-                    no idea what is going on in the soil or how the plant is feeling on any given day.
+                    no idea what is going on in the soil in terms of humidity or how the plant is feeling on any given
+                    day.
                     <br />
                     <br />
                     I found that the best way to start caring for this plant better would be to start monitoring the
                     soil moisutre content. I achieved this through the use of an HW-080 soil moisture sensor.
-                    <br />
                     I found that if I were to connect the sensor as a variable resistance in a voltage divider with a
                     10K Ohm resistor, I would be able to see the change in voltage being used by the moisture sensor,
                     and therefore determine the moisture content of the soil.
-                    <br />
-                    <br />
-                    I took ADC readings from the soil every minute. This was because I found that the moisture content
-                    took around 10 days to go from 100% humidity to 0% humidity, and 14400 updates would be pleanty.
+                </p>
+                <img src="../plantWaterSensor/images/soilMoistureSensor.jpg" alt="The HW-080 Soil moisture sensor"
+                    style="height:200px;margin-top:15px;">
+                <p class="figureDefinition">Figure 3: The HW-080 Soil moisture sensor</p>
+                <p>
+                    This worked well so I decided I would start taking ADC readings from the soil humidity sensor every
+                    minute. With the moisture level in the soil taking around 5 days to reach 0%, I found that this
+                    frequency of readings would be ideal for my use case.
                     <br />
                     <br />
                     I chose to take these readings with an STM32 microcontroller as I found that it would be be a great
                     chance for me to learn about the STM32 better and to deepen my understanding of firmware development
                     in general.
-                    <br />
-                    <br />
-                    Once the data had been read onto the STM32 microcontroller, I found that I would need to display
-                    this data in some way to the user, myself. The easiest and clearest way to achieve this would be
-                    through the use of a 7-segment display. When testing if mine still worked, I managed to break it.
-                    This meant that I would need to use a different approach. I instead opted to use an I2C Liquid
-                    Crystal Display (LCD). This would force me to learn how the I2C protocol works and would allow for a
-                    much nicer looking project.
                 </p>
+                <img src="../plantWaterSensor/images/stm32Board.jpg" alt="STM32 development board"
+                    style="height:200px;margin-top:15px;">
+                <p class="figureDefinition">Figure 4: STM32 development board</p>
+                <p>
+                    Once the data had been read by the STM32 microcontroller, I found that I would need to display
+                    this data in some way to the user, in this case that was myself. The easiest and clearest way to
+                    achieve this would be through the use of a 7-segment display.
+                    <br />
+                    When testing if mine still worked, I managed to break it, forgetting to add a resistor to limit the
+                    current. This meant that I would need to use a different approach. I instead opted to use an I2C
+                    Liquid Crystal Display (LCD). This would force me to learn how the I2C protocol works and would
+                    allow for a much nicer looking project.
+                </p>
+                <img src="../plantWaterSensor/images/i2cDisplay.jpg" alt="I2C Display used for the project"
+                    style="height:200px;margin-top:15px;">
+                <p class="figureDefinition">Figure 5: I2C Display used for the project</p>
             </fieldset>
 
             <fieldset class="projectCard">
@@ -81,14 +111,14 @@
                     use the I2C protocol. This will greatly increase the scope of projects that I can complete in the
                     future while also allowing me a deeper understanding of the world of electronics around me. Another
                     major learning point for me was that my stuides are paying off and that the choice to use a voltage
-                    divider worked very well in describing the humidity of remaining in the soil.
+                    divider worked very well in describing the humidity remaining in the soil.
                     <br />
                     <br />
-                    A fact that I learned is that caring for plants is not an exact science and that there is variation
-                    in the needs of a plant due to many, many factors. While trying to keep the humidity at 60% was a
-                    good idea and would likely have worked in ideal circumstances, I rather needed to keep an average of
-                    60%. This meant allowing the plant time for its roots to dry between waterings, preventing root rot
-                    and other forms of sickness.
+                    A further fact that I learned is that caring for plants is not an exact science and that there is
+                    variation in the needs of a plant due to many, many factors. While trying to keep the humidity at
+                    60% was a good idea and would likely have worked in ideal circumstances, I rather needed to keep an
+                    average of 60%. This meant allowing the plant time for its roots to dry between waterings,
+                    preventing root rot and other forms of sickness.
                 </p>
             </fieldset>
 
@@ -106,7 +136,8 @@
                     <br />
                     I find that some of the skills that I have gained may be useful in the agriculture and horticulture
                     industries, which are very prominent in New Zealand. I also find that my newly developed firmware
-                    skills of using I2C will give me a chance to take on a greater range of projects in the future.
+                    skills of using the I2C protocol will give me a chance to take on a greater range of projects in the
+                    future.
                     <br />
                     <br />
                     In terms of developing this project further. I hope that in the future I will be able to monitor
