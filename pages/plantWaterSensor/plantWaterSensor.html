@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- <meta charset="UTF-8"> -->
+    <link rel="stylesheet" href="../../css/indexStyles.css">
+
+</head>
+
+<body>
+    <div id="mainContainer">
+        <a href="../../index.html"><u>Go back</u></a>
+        <section id="introSection" class="pageSection">
+            <h1 id="pageTitle">
+                Plant Water Sensor
+            </h1>
+            <p class="projectType">
+                Hardware / Firmware
+            </p>
+        </section>
+        <section id="plantWaterSensorPageSection" class="pageSection">
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">P</span>urpose
+                    </strong>
+                </legend>
+                <p>
+                    Life is precious. Plants can be espically so as they are able to generate food or other consumable
+                    products. All plants require a different level of care. This can be anything from full sunlight all
+                    days of the year as is experrienced by desert plants or it could be minimal sunlight with almost no
+                    heat allowed, as is often seen in indoor house plants. <br />
+                    <br />
+                    In my room. I have a few plants that I care for, mostly for look. My most precious of these is my
+                    Adanson's monstera (Monstera Adansonii). This plant comes from the rainforest reigions of Southern
+                    and Central America. This means that the plant often requires a great amount of care, as it now
+                    lives in a bedroom in New Zealand.
+                    <br />
+                    <br />
+                    My Adanson's monstera enjoys being difficult. It likes to live in a spot which experiences bright,
+                    indirect sunlight, such as a windowsill. It lives best in a temperature range of 18 - 27 Degrees
+                    Celcius, with an almost constant humidity level of 60%. This is exptremely difficult to maintain,
+                    not only with temperatures in New Zealand bearly fitting the ideal ranges, but also because I have
+                    no idea what is going on in the soil or how the plant is feeling on any given day.
+                    <br />
+                    <br />
+                    I found that the best way to start caring for this plant better would be to start monitoring the
+                    soil moisutre content. I achieved this through the use of an HW-080 soil moisture sensor.
+                    <br />
+                    I found that if I were to connect the sensor as a variable resistance in a voltage divider with a
+                    10K Ohm resistor, I would be able to see the change in voltage being used by the moisture sensor,
+                    and therefore determine the moisture content of the soil.
+                    <br />
+                    <br />
+                    I took ADC readings from the soil every minute. This was because I found that the moisture content
+                    took around 10 days to go from 100% humidity to 0% humidity, and 14400 updates would be pleanty.
+                    <br />
+                    <br />
+                    I chose to take these readings with an STM32 microcontroller as I found that it would be be a great
+                    chance for me to learn about the STM32 better and to deepen my understanding of firmware development
+                    in general.
+                    <br />
+                    <br />
+                    Once the data had been read onto the STM32 microcontroller, I found that I would need to display
+                    this data in some way to the user, myself. The easiest and clearest way to achieve this would be
+                    through the use of a 7-segment display. When testing if mine still worked, I managed to break it.
+                    This meant that I would need to use a different approach. I instead opted to use an I2C Liquid
+                    Crystal Display (LCD). This would force me to learn how the I2C protocol works and would allow for a
+                    much nicer looking project.
+                </p>
+            </fieldset>
+
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">W</span>hat did I learn?
+                    </strong>
+                </legend>
+                <p>
+                    Thoughout this project I learned many valuable skills. Most importantly was that I learned how to
+                    use the I2C protocol. This will greatly increase the scope of projects that I can complete in the
+                    future while also allowing me a deeper understanding of the world of electronics around me. Another
+                    major learning point for me was that my stuides are paying off and that the choice to use a voltage
+                    divider worked very well in describing the humidity of remaining in the soil.
+                    <br />
+                    <br />
+                    A fact that I learned is that caring for plants is not an exact science and that there is variation
+                    in the needs of a plant due to many, many factors. While trying to keep the humidity at 60% was a
+                    good idea and would likely have worked in ideal circumstances, I rather needed to keep an average of
+                    60%. This meant allowing the plant time for its roots to dry between waterings, preventing root rot
+                    and other forms of sickness.
+                </p>
+            </fieldset>
+
+            <fieldset class="projectCard">
+                <legend>
+                    <strong class="projectName">
+                        <span id="firstLetter">F</span>uture inspiration
+                    </strong>
+                </legend>
+                <p>
+                    This project was good fun as it allowed me not only to care for something that I was passionate
+                    about, but it also gave me the chance to expand my electronics and firmware skills into the real
+                    world, making a positive difference.
+                    <br />
+                    <br />
+                    I find that some of the skills that I have gained may be useful in the agriculture and horticulture
+                    industries, which are very prominent in New Zealand. I also find that my newly developed firmware
+                    skills of using I2C will give me a chance to take on a greater range of projects in the future.
+                    <br />
+                    <br />
+                    In terms of developing this project further. I hope that in the future I will be able to monitor
+                    more factors that influence the plant. This will give me a better understanding of what it needs to
+                    survive and how these should be best balanced. There may also be an opportunity to train an AI,
+                    which will be able to care for this plant better than a human might be able to.
+                </p>
+            </fieldset>
+            <div class="lineBreak"></div>
+        </section>
+    </div>
+</body>
+
+</html>
