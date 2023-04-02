@@ -19,9 +19,9 @@
             </p>
         </section>
         <section id="plantWaterSensorPageSection" class="pageSection">
-            <img src="../plantWaterSensor/images/Monstera_adansonii_leaf.jpg" alt="Monstera Adansonii leaf"
-                style="height:200px;margin-top:15px;">
-            <p class="figureDefinition">Figure 1: Adanson's monstera leaf</p>
+            <img src="../plantWaterSensor/images/finishedProduct.jpg" alt="Finished project"
+                style="height:450px;margin-top:15px;">
+            <p class="figureDefinition">Figure 1: Finished project</p>
             <fieldset class="projectCard">
                 <legend>
                     <strong class="projectName">
@@ -29,28 +29,22 @@
                     </strong>
                 </legend>
                 <p>
-                    Life is precious. Not only does Earth hold the only known instances of it, but it is also
-                    required to feed and care for human beings. Throughout the world, there are millions of different
-                    plant species, all with difference appearances, properties and needs.
-                    <br />
-                    <br />
-                    In my room, I have a few plants that I care for, though largely for looks and not for food or
-                    health. My most precious of these is my Adanson's monstera (Monstera Adansonii) which I rescued and
-                    have raised since it was only a single leaf. This plant originates from the river valleys of South
-                    and Central America. Meaning that it often requires a great amount of care, as it now
-                    lives in a dry bedroom in New Zealand.
+                    In my room, I have a few plants that I care for. My most precious of these is my Adanson's monstera
+                    (Monstera Adansonii) which I rescued and have raised since it was only a single leaf. This plant
+                    originates from the river valleys of South and Central America. Meaning that it often requires a
+                    great amount of care, as it now lives in a bedroom in New Zealand.
                 </p>
                 <table>
                     <tr>
                         <td style="width:400px;">
                             <img src="../plantWaterSensor/images/Monstera_adansonii_leaf.jpg"
                                 alt="Monstera Adansonii leaf" style="height:200px;margin-top:15px;">
-                            <p class="figureDefinition">Figure 1: Adanson's monstera leaf</p>
+                            <p class="figureDefinition">Figure 2: Adanson's monstera leaf</p>
                         </td>
                         <td>
                             <img src="../plantWaterSensor/images/monsteraNow.jpg" alt="Monstera Adansonii leaf"
                                 style="height:200px;margin-top:15px;">
-                            <p class="figureDefinition">Figure 2: My Adanson's monstera now</p>
+                            <p class="figureDefinition">Figure 3: My Adanson's monstera now</p>
                         </td>
                     </tr>
                 </table>
@@ -71,9 +65,9 @@
                 </p>
                 <img src="../plantWaterSensor/images/soilMoistureSensor.jpg" alt="The HW-080 Soil moisture sensor"
                     style="height:200px;margin-top:15px;">
-                <p class="figureDefinition">Figure 3: The HW-080 Soil moisture sensor</p>
+                <p class="figureDefinition">Figure 4: The HW-080 Soil moisture sensor</p>
                 <p>
-                    This worked well so I decided I would start taking ADC readings from the soil humidity sensor every
+                    This worked well, so I decided I would start taking ADC readings from the soil humidity sensor every
                     minute. With the moisture level in the soil taking around 5 days to reach 0%, I found that this
                     frequency of readings would be ideal for my use case.
                     <br />
@@ -84,20 +78,22 @@
                 </p>
                 <img src="../plantWaterSensor/images/stm32Board.jpg" alt="STM32 development board"
                     style="height:200px;margin-top:15px;">
-                <p class="figureDefinition">Figure 4: STM32 development board</p>
+                <p class="figureDefinition">Figure 5: STM32 development board</p>
                 <p>
                     Once the data had been read by the STM32 microcontroller, I found that I would need to display
                     this data in some way to the user, in this case that was myself. The easiest and clearest way to
                     achieve this would be through the use of a 7-segment display.
                     <br />
+                    <br />
                     When testing if mine still worked, I managed to break it, forgetting to add a resistor to limit the
-                    current. This meant that I would need to use a different approach. I instead opted to use an I2C
+                    current through the LEDs. This meant that I would need to use a different approach. I instead opted
+                    to use an I2C
                     Liquid Crystal Display (LCD). This would force me to learn how the I2C protocol works and would
                     allow for a much nicer looking project.
                 </p>
                 <img src="../plantWaterSensor/images/i2cDisplay.jpg" alt="I2C Display used for the project"
                     style="height:200px;margin-top:15px;">
-                <p class="figureDefinition">Figure 5: I2C Display used for the project</p>
+                <p class="figureDefinition">Figure 6: I2C Display used for the project</p>
             </fieldset>
 
             <fieldset class="projectCard">
