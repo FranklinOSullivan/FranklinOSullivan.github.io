@@ -13,7 +13,7 @@ html {
 p,
 li {
     color: #252525;
-    font-size: 16px;
+    font-size: 17px;
 }
 
 a {
@@ -21,7 +21,7 @@ a {
 }
 
 strong {
-    font-size: 20px;
+    font-size: 24px;
 }
 
 u:hover,
@@ -72,7 +72,7 @@ legend {
 
 #firstLetter {
     color: #0395DE;
-    font-size: 20px;
+    font-size: 24px;
 }
 
 #firstLetterPageName {
@@ -143,7 +143,7 @@ legend {
 
 .figureDefinition {
     margin-top: 0px;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .pageName {
