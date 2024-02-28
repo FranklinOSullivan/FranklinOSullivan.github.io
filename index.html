@@ -1,248 +1,275 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <!-- <meta charset="UTF-8"> -->
-    <link rel="stylesheet" href="css/indexStyles.css">
+    <link rel="stylesheet" href="css/indexStyles.css" />
     <title>Franklin O'Sullivan's Personal Website</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <div id="mainContainer">
-        <section id="introSection" class="pageSection">
+      <section id="introSection" class="pageSection">
+        <p id="userName">
+          <img
+            id="profilePhoto"
+            src="images/profilePhoto.jpg"
+            alt="Profile photo"
+          />
+          Franklin O'Sullivan
+        </p>
+        <div id="socialList">
+          <a id="phoneNumber" class="socialLink"
+            >Phone: <br />+(64) 22 321 5418</a
+          ><br />
+          <a class="socialLinkSeperator">|</a>
+          <a id="emailAddress" class="socialLink"
+            >Email: <br />Franklino0808@gmail.com</a
+          ><br />
+          <a class="socialLinkSeperator">|</a>
+          <a
+            id="githubLink"
+            class="socialLink"
+            href="https://github.com/FranklinOSullivan"
+            target="_blank"
+            >Github: <br /><u
+              class="socialLinkGithub"
+              data-value="FranklinOSullivan"
+              >FranklinOSullivan</u
+            ></a
+          ><br />
+          <a class="socialLinkSeperator">|</a>
+          <a
+            id="resumeDownload"
+            class="socialLink"
+            href="pages/resume/FranklinOSullivanResume.html"
+            target="_blank"
+            >Resume <br /><u class="socialLink">Download</u></a
+          ><br />
+        </div>
+      </section>
 
-            <p id="userName">
-                <img id="profilePhoto" src="images/profilePhoto.jpg" alt="Profile photo">
-                Franklin O'Sullivan
-            </p>
-            <div id="socialList">
-                <a id="phoneNumber" class="socialLink">Phone: <br>+(64) 22 321 5418</a><br>
-                <a class="socialLinkSeperator">|</a>
-                <a id="emailAddress" class="socialLink">Email: <br>Franklino0808@gmail.com</a><br>
-                <a class="socialLinkSeperator">|</a>
-                <a id="githubLink" class="socialLink" href="https://github.com/FranklinOSullivan"
-                    target="_blank">Github: <br><u class="socialLinkGithub"
-                        data-value="FranklinOSullivan">FranklinOSullivan</u></a><br>
-                <a class="socialLinkSeperator">|</a>
-                <a id="resumeDownload" class="socialLink" href="pages/resume/FranklinOSullivanResume.pdf"
-                    target="_blank">Resume <br><u class="socialLink">Download</u></a><br>
-            </div>
-        </section>
+      <section id="socialSection" class="pageSection">
+        <p id="introBio">
+          As a final year Computer Systems Engineering student at the University
+          of Auckland, I am passionately engaged in acquiring a diverse skill
+          set that spans electronics, software engineering, and computer
+          architecture. I am inspired by the potential of embedded systems to
+          revolutionize industries through smart design and I am excited to
+          pioneer this in my career journey.
+          <br />
+          <br />
+          Learning all of this has allowed me to pursue computer systems design
+          for fun in my own time. Leading to the development of many of my own
+          projects across all three disciplines of electronics, computer systems
+          and software.
+          <br />
+          <br />
+          Many of these projects are on display below to help show what I am
+          capable of. Please feel free to get in touch with any questions or
+          comments!
+        </p>
+      </section>
 
-        <section id="socialSection" class="pageSection">
-            <p id="introBio">
-                I am a third-year Computer Systems Engineering student at the University of Auckland.
-                <br />
-                <br />
-                This degree couples electronics and software engineering to teach an array of theoretical and practical
-                skills related largely to computer architecture and embedded systems. Though it also teaches me many
-                electronics and software engineering skills, useful to know for computer systems and important to
-                understand for real-world applications.
-                <br />
-                <br />
-                Learning all of this has allowed me to pursue computer systems design for fun in my own time. Leading
-                to the development of many of my own projects across all three disciplines of electronics, computer
-                systems and software.
-                <br />
-                <br />
-                Many of these projects are on display below to help show what I am capable of. Please feel free to get
-                in touch with any questions or comments!
-            </p>
-        </section>
+      <section id="personalProjects" class="pageSection">
+        <h2>Personal Projects</h2>
 
-        <section id="personalProjects" class="pageSection">
-            <h2>
-                Personal Projects
-            </h2>
+        <fieldset class="projectCard">
+          <legend>
+            <strong class="projectName">
+              <span id="firstLetter">R</span>esistor ratio calculator
+            </strong>
+          </legend>
+          <p class="projectType">Software</p>
+          <p>
+            A simple calculator to show the best pair of resistor values to use
+            for a given input. There are options to use the resistor values I
+            currently have at home or the E12 series that is used at my
+            university.
+          </p>
+          <a href="pages/resistorRatios/personalProjectResistorRatio.html">
+            <u>See more!</u>
+          </a>
+        </fieldset>
 
-            <fieldset class="projectCard">
-                <legend>
-                    <strong class="projectName">
-                        <span id="firstLetter">R</span>esistor ratio calculator
-                    </strong>
-                </legend>
-                <p class="projectType">
-                    Software
-                </p>
-                <p>
-                    A simple calculator to show the best pair of resistor values to use for a given input. There are
-                    options to use the resistor values I currently have at home or the E12 series that is used at my
-                    university.
-                </p>
-                <a href="pages/resistorRatios/personalProjectResistorRatio.html">
-                    <u>See more!</u>
-                </a>
-            </fieldset>
+        <fieldset class="projectCard">
+          <legend>
+            <strong class="projectName">
+              <span id="firstLetter">H</span>TML Project Website
+            </strong>
+          </legend>
+          <p class="projectType">Software</p>
+          <p>
+            More information about the creation of this website and the skills I
+            gained through the development of it, as well as future plans for
+            frameworks, databases and visual updates.
+          </p>
+          <a href="pages/websiteProject/websiteProject.html"
+            ><u>See more!</u></a
+          >
+        </fieldset>
 
-            <fieldset class="projectCard">
-                <legend>
-                    <strong class="projectName">
-                        <span id="firstLetter">H</span>TML Project Website
-                    </strong>
-                </legend>
-                <p class="projectType">
-                    Software
-                </p>
-                <p>
-                    More information about the creation of this website and the skills I gained through the development
-                    of it, as well as future plans for frameworks, databases and visual updates.
-                </p>
-                <a href="pages/websiteProject/websiteProject.html"><u>See more!</u></a>
-            </fieldset>
+        <fieldset class="projectCard">
+          <legend>
+            <strong class="projectName">
+              <span id="firstLetter">S</span>R-Latch
+            </strong>
+          </legend>
+          <p class="projectType">Hardware</p>
+          <p>
+            I created an SR-Latch (one-bit computer memory) using passive
+            components.<br /><br />
+            I was interested in this project because of its usefulness in
+            applications such as computer memory and registers. It also helped
+            me further develop my simulating, breadboarding and soldering skills
+            while teaching me about power usage and selecting optimal
+            components.
+          </p>
+          <a href="pages/SRLatch/personalProjectSRLatch.html"
+            ><u>See more!</u></a
+          >
+        </fieldset>
 
-            <fieldset class="projectCard">
-                <legend>
-                    <strong class="projectName">
-                        <span id="firstLetter">S</span>R-Latch
-                    </strong>
-                </legend>
-                <p class="projectType">
-                    Hardware
-                </p>
-                <p>
-                    I created an SR-Latch (one-bit computer memory) using passive components.<br><br>
-                    I was interested in this project because of its usefulness in applications such as computer memory
-                    and registers. It also helped me further develop my simulating, breadboarding and soldering skills
-                    while teaching me about power usage and selecting optimal components.
-                </p>
-                <a href="pages/SRLatch/personalProjectSRLatch.html"><u>See more!</u></a>
-            </fieldset>
+        <fieldset class="projectCard">
+          <legend>
+            <strong class="projectName">
+              <span id="firstLetter">H</span>TML Calculator
+            </strong>
+          </legend>
+          <p class="projectType">Software</p>
+          <p>
+            I built an HTML calculator to verify and brush up on my basic
+            Javascript skills. This project allowed me to make multiple
+            iterations of the same idea in different directions to work on
+            multiple different skills.
+          </p>
+          <a href="pages/HTMLCalc/personalProjectHTMLCalc.html"
+            ><u>See more!</u></a
+          >
+        </fieldset>
 
-            <fieldset class="projectCard">
-                <legend>
-                    <strong class="projectName">
-                        <span id="firstLetter">H</span>TML Calculator
-                    </strong>
-                </legend>
-                <p class="projectType">
-                    Software
-                </p>
-                <p>
-                    I built an HTML calculator to verify and brush up on my basic Javascript skills. This project
-                    allowed me to make multiple iterations of the same idea in different directions to work on multiple
-                    different skills.
-                </p>
-                <a href="pages/HTMLCalc/personalProjectHTMLCalc.html"><u>See more!</u></a>
-            </fieldset>
+        <fieldset class="projectCard">
+          <legend>
+            <strong class="projectName">
+              <span id="firstLetter">O</span>ther projects
+            </strong>
+          </legend>
+          <p class="projectType">Firmware</p>
+          <ul>
+            <li>
+              <a href="pages/otherProjects/personalProjectLEDs.html"
+                ><u
+                  >Individually addressable LED strip using infared input</u
+                ></a
+              >
+            </li>
+            <li>
+              <a href="pages/otherProjects/personalProjectDice.html"
+                ><u>Dice emulator using an STM32 prototype board</u></a
+              >
+            </li>
+          </ul>
+          <p class="projectType">Software</p>
+          <ul>
+            <li>
+              <a href="pages/otherProjects/personalProjectPythonPhonetic.html"
+                ><u>Python game to learn the phonetic alphabet</u></a
+              >
+            </li>
+          </ul>
+          <p class="projectType">In progress</p>
+          <ul>
+            <li>Table top powersupply unit</li>
+            <li>Plant water sensor</li>
+          </ul>
+        </fieldset>
+      </section>
 
-            <fieldset class="projectCard">
-                <legend>
-                    <strong class="projectName">
-                        <span id="firstLetter">O</span>ther projects
-                    </strong>
-                </legend>
-                <p class="projectType">
-                    Firmware
-                </p>
-                <ul>
-                    <li>
-                        <a href="pages/otherProjects/personalProjectLEDs.html"><u>Individually addressable LED strip
-                                using
-                                infared input</u></a>
-                    </li>
-                    <li>
-                        <a href="pages/otherProjects/personalProjectDice.html"><u>Dice emulator using an STM32 prototype
-                                board</u></a>
-                    </li>
-                </ul>
-                <p class="projectType">
-                    Software
-                </p>
-                <ul>
-                    <li>
-                        <a href="pages/otherProjects/personalProjectPythonPhonetic.html"><u>Python game to learn the
-                                phonetic alphabet</u></a>
-                    </li>
-                </ul>
-                <p class="projectType">
-                    In progress
-                </p>
-                <ul>
-                    <li>
-                        Table top powersupply unit
-                    </li>
-                    <li>
-                        Plant water sensor
-                    </li>
-                </ul>
-            </fieldset>
-        </section>
+      <section id="universityProjects" class="pageSection">
+        <h2>University Projects</h2>
+        <fieldset class="projectCard">
+          <legend>
+            <strong class="projectName">
+              <span id="firstLetter">S</span>mart energy monitor
+            </strong>
+          </legend>
+          <p class="projectType">Firmware, Hardware, Software</p>
+          <p>
+            Worked with a team to develop a smart energy monitor. By reading the
+            voltage across and current through a load using a shunt resistor, we
+            could find and display the root mean square and peak values of
+            current, voltage and power. We then wrote these values to a 4-bit
+            7-segment display, UART transmission to a computer and python
+            application.
+          </p>
+          <a
+            class="seeMore"
+            href="pages/universityProjects/universityProjectSmartEnergyMonitor.html"
+            ><u>See more!</u></a
+          >
+        </fieldset>
+        <fieldset class="projectCard">
+          <legend>
+            <strong class="projectName">
+              <span id="firstLetter">O</span>ther projects
+            </strong>
+          </legend>
+          <p class="projectType">Software</p>
+          <ul>
+            <li>
+              <a
+                href="pages/universityProjects/universityProjectCommandlineBJ.html"
+                ><u>Commandline BlackJack game in Java</u></a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/universityProjects/universityProjectCommandlineStore.html"
+                ><u>Commandline store in Java</u></a
+              >
+            </li>
+            <li>
+              <a href="pages/universityProjects/universityProjectHashing.html"
+                ><u
+                  >Linear probing and Double hashing algorithms in python</u
+                ></a
+              >
+            </li>
+            <li>
+              <a href="pages/universityProjects/universityProjectCycles.html"
+                ><u>Finding cycles in a directed graph using python</u></a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/universityProjects/universityProjectConnectedComponents.html"
+                ><u
+                  >Used python to determine the number of connected components
+                  in a graph</u
+                ></a
+              >
+            </li>
+            <li>
+              <a
+                href="pages/universityProjects/universityProjectLongestCycle.html"
+                ><u
+                  >Finding the length of the longest directed cycle in a
+                  directed graph</u
+                ></a
+              >
+            </li>
+          </ul>
+          <p class="projectType">In progress</p>
+          <ul>
+            <li>AI Sign Language recognition</li>
+            <li>VHDL Flappy bird game</li>
+          </ul>
+        </fieldset>
 
-
-        <section id="universityProjects" class="pageSection">
-            <h2>
-                University Projects
-            </h2>
-            <fieldset class="projectCard">
-                <legend>
-                    <strong class="projectName">
-                        <span id="firstLetter">S</span>mart energy monitor
-                    </strong>
-                </legend>
-                <p class="projectType">
-                    Firmware, Hardware, Software
-                </p>
-                <p>
-                    Worked with a team to develop a smart energy monitor. By reading the voltage across and current
-                    through a load using a shunt resistor, we could find and display the root mean square and peak
-                    values of current, voltage and power. We then wrote these values to a 4-bit 7-segment display, UART
-                    transmission to a computer and python application.
-                </p>
-                <a class="seeMore" href="pages/universityProjects/universityProjectSmartEnergyMonitor.html"><u>See
-                        more!</u></a>
-            </fieldset>
-            <fieldset class="projectCard">
-                <legend>
-                    <strong class="projectName">
-                        <span id="firstLetter">O</span>ther projects
-                    </strong>
-                </legend>
-                <p class="projectType">
-                    Software
-                </p>
-                <ul>
-                    <li>
-                        <a href="pages/universityProjects/universityProjectCommandlineBJ.html"><u>AI Sign Language
-                                recognition</u></a>
-                    </li>
-                    <li>
-                        <a href="pages/universityProjects/universityProjectCommandlineBJ.html"><u>Flappy bird in VHDL
-                            </u></a>
-                    </li>
-                    <li>
-                        <a href="pages/universityProjects/universityProjectCommandlineBJ.html"><u>Commandline BlackJack
-                                game in Java</u></a>
-                    </li>
-                    <li>
-                        <a href="pages/universityProjects/universityProjectCommandlineStore.html"><u>Commandline store
-                                in Java</u></a>
-                    </li>
-                    <li>
-                        <a href="pages/universityProjects/universityProjectHashing.html"><u>Linear probing and Double
-                                hashing algorithms in python</u></a>
-                    </li>
-                    <li>
-                        <a href="pages/universityProjects/universityProjectCycles.html"><u>Finding cycles in a directed
-                                graph using python</u></a>
-                    </li>
-                    <li>
-                        <a href="pages/universityProjects/universityProjectConnectedComponents.html"><u>Used python to
-                                determine the number of connected components in a graph</u></a>
-                    </li>
-                    <li>
-                        <a href="pages/universityProjects/universityProjectLongestCycle.html"><u>Finding the length of
-                                the
-                                longest directed cycle in a directed graph</u></a>
-                    </li>
-                </ul>
-            </fieldset>
-
-            <div class="lineBreak"></div>
-        </section>
+        <div class="lineBreak"></div>
+      </section>
     </div>
     <script src="indexJs.js"></script>
-</body>
-
+  </body>
 </html>
 
 <!-- Future projects:
